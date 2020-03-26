@@ -2,7 +2,8 @@
 This is a custom data acquisition card based on the STM32F103C8Tx platform.
 This board has some necessary front-end electronics and the interfacing software. The board has the following features
 
-Here is a sweet pic of the board running some hardware diagnostics
+Here is a pic of the board running some hardware diagnostics
+![DACard-BASIC Gain Diagnostic](https://raw.githubusercontent.com/wayri/DACard-Basic/master/dacard-diagnostic.jpeg)
 
 
 ## Features
