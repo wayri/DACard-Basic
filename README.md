@@ -5,9 +5,10 @@ This board has some necessary front-end electronics and the interfacing software
 Here is a pic of the board running some hardware diagnostics
 ![DACard-BASIC Gain Diagnostic](https://raw.githubusercontent.com/wayri/DACard-Basic/master/dacard-diagnostic.jpeg)
 
+The red LEDs are used to indicate hardware gain selection setting (both should be off - Thus a good test)
 
 ## Features
-- STM32F103C8Tx microcontroller running at 72MHz
+- STM32F103C8Tx microcontroller (Blue-Pill) running at 72MHz
 - 4 DC ADC channels
 - 1 low voltage AC signal sensing channel (SIGNAL // not power)
 - 1 configurable level crossing detector
@@ -18,6 +19,9 @@ Here is a pic of the board running some hardware diagnostics
 - DIP6 shared|software configured digital header [can be programmed to test logic and stuff]
 - 3 high speed PWM pins with adjustable dead time insertion
 - 3 complimentary PWM pins
+
+
+All ADCs run at 12MHz[APB2] - The sampling is set to attain a good 4 Msps overall. which is shared between 4 DC channels on ADC1 [~ 1Msps each] and between 2 channels on ADC2 for AC and crossing detection [~2Msps].
 
 ### ! The software for the setup is currently in Gamma|closed-source
  > Once it becomes stable enough it will be released under an appropriate liscence
