@@ -24,7 +24,7 @@ The red LEDs are used to indicate hardware gain selection setting (both should b
 All ADCs run at 12MHz[APB2] - The sampling is set to attain a good 4 Msps overall. which is shared between 4 DC channels on ADC1 [~ 1Msps each] and between 2 channels on ADC2 for AC and crossing detection [~2Msps].
 
 ### ! The software for the setup is currently in Gamma|closed-source
- > Once it becomes stable enough it will be released under an appropriate liscence
+ > Once it becomes stable enough it will be released under an appropriate licence
 
 ## The repository
 This repository contains the pictures of the prototype hardware | design and under test.
